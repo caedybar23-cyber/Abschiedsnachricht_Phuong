@@ -107,7 +107,7 @@
     }
     .closing{
       margin-top:22px;
-      text-align:right;
+      text-align:left;
       font-style:italic;
       color:#7e4960;
       font-size:17px;
@@ -123,41 +123,54 @@
     .wrap{padding-top:28px}
     .hint-toggle{
       margin-top:14px;
-      background:var(--hint);
-      border-left:5px solid var(--hint-border);
-      border-radius:14px;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
       color:#5a4b18;
-      overflow:hidden;
+      background:transparent;
+      border:0;
+      border-radius:0;
+      overflow:visible;
     }
     .hint-toggle summary{
       cursor:pointer;
       list-style:none;
-      padding:10px 14px;
-      font-size:19px;
-      font-weight:800;
+      width:34px;
+      height:34px;
+      padding:0;
+      font-size:16px;
+      font-weight:400;
       user-select:none;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      background:var(--hint);
+      border:1px solid var(--hint-border);
+      border-radius:999px;
+      box-shadow:0 2px 8px rgba(121,94,34,.12);
+      flex:0 0 34px;
     }
     .hint-toggle summary::-webkit-details-marker{display:none}
-    .hint-toggle summary::after{
-      content:"";
-      margin-left:8px;
-      font-size:14px;
-      font-weight:700;
-    }
+    .hint-toggle summary::after{content:""}
     .hint-toggle[open] summary::after{content:""}
     .hint-content{
-      padding:0 14px 13px 14px;
-      border-top:1px solid rgba(160,130,20,.18);
-      padding-top:10px;
+      display:inline;
+      padding:0;
+      border-top:0;
+      font-family: Aptos, "Segoe UI", Arial, sans-serif;
+      font-size:13px;
+      font-weight:400;
+      color:#7a4e2d;
+      line-height:1.45;
     }
 </style>
 </head>
 <body>
 <main class="wrap">
 <section class="section">
-<p class="de"><strong>Hallo Phượng,</strong><br/>
-      bevor unser Kurs zu Ende geht, möchte ich dir noch ein paar persönliche Worte sagen.</p>
-<details class="hint-toggle"><summary>💡</summary><div class="hint-content">Trước khi khóa học của chúng ta kết thúc, cô muốn nhắn với em vài lời thật riêng.</div></details>
+<p class="de">Hallo Phượng,<br/>
+      heute möchte ich dir mal schreiben, wie sehr ich dich mag.</p>
+
 </section>
 <section class="section">
 <p class="de">
@@ -165,44 +178,29 @@
         Du bist ein sehr liebes, höfliches und fleißiges Mädchen. Du lernst schnell, verstehst neue Inhalte sehr gut
         
       </p>
-<details class="hint-toggle"><summary>💡</summary><div class="hint-content">Ngay từ buổi học đầu tiên, em đã để lại cho cô một ấn tượng rất tốt. Em là một cô bé rất ngoan, lễ phép và chăm chỉ.
-        Em học nhanh, tiếp thu bài tốt và luôn cố gắng hết sức để hiểu bài thật sự.</div></details>
-</section>
-<section class="section">
-<p class="de">
-        Besonders schätze ich, dass du deine Aufgaben immer zuverlässig erledigst und im Unterricht aufmerksam mitmachst.
-        Man merkt, dass du lernen möchtest und dich wirklich bemühst. Das freut mich jedes Mal sehr.
-      </p>
-<details class="hint-toggle"><summary>💡</summary><div class="hint-content">Cô đặc biệt trân trọng việc em luôn hoàn thành bài tập rất nghiêm túc và tham gia học tập tập trung.
-        Cô cảm nhận được rằng em thật sự muốn học và luôn nỗ lực. Điều đó khiến cô rất vui.</div></details>
+<details class="hint-toggle"><summary>💡</summary><span class="hint-content">Ngay từ buổi học đầu tiên, cô đã có ấn tượng rất tốt về em. Em là một cô bé rất ngoan, lễ phép và chăm chỉ. Em học nhanh và tiếp thu bài mới rất tốt.</span></details>
 </section>
 <section class="section">
 <p class="de">
         Obwohl wir uns bisher nur online gesehen haben, würde ich dich sehr gern einmal im echten Leben treffen.
         Wenn wir uns eines Tages wirklich begegnen, bekommst du von mir eine ganz lange Umarmung.
       </p>
-<details class="hint-toggle"><summary>💡</summary><div class="hint-content">Mặc dù đến giờ chúng ta chỉ gặp nhau qua lớp học online, cô rất muốn có cơ hội gặp em ngoài đời thật.
-        Nếu một ngày nào đó chúng ta thật sự gặp nhau, cô sẽ ôm em thật lâu nhé.</div></details>
+<details class="hint-toggle"><summary>💡</summary><span class="hint-content">Dù từ trước đến giờ cô trò mình mới chỉ gặp nhau qua màn hình, cô vẫn rất mong một ngày nào đó có thể gặp em ngoài đời. Nếu hôm ấy thật sự đến, cô nhất định sẽ ôm em thật lâu.</span></details>
 </section>
 <section class="section">
 <p class="de">
         Danke, dass du ein so wichtiger Teil von ONL1309 bist.
-        Mit dir wurden unsere Unterrichtsstunden immer lebendiger, fröhlicher und interessanter.
-        Deine Anwesenheit hat unsere Klasse auf eine ganz besondere Weise bereichert.
       </p>
-<details class="hint-toggle"><summary>💡</summary><div class="hint-content">Cảm ơn em vì đã là một phần thật quan trọng của ONL1309. Những tiết học có em luôn sôi động, vui vẻ và thú vị hơn rất nhiều.
-        Sự có mặt của em đã làm lớp học trở nên đặc biệt hơn.</div></details>
+<details class="hint-toggle"><summary>💡</summary><span class="hint-content">Cảm ơn em vì đã là một phần thật đặc biệt của ONL1309.</span></details>
 </section>
 <section class="section">
 <p class="de">
         Ich habe dich wirklich sehr ins Herz geschlossen und werde mich gern an unsere gemeinsame Zeit erinnern.
         Egal, ob Deutsch später weiter ein Teil deines Weges sein wird oder nicht:
         Ich hoffe, dass du aus diesem Kurs nicht nur neue Wörter und Grammatik mitnimmst,
-        sondern auch neues Wissen, schöne Erinnerungen und einen kleinen Einblick in eine andere Kultur.
+        sondern auch neues Wissen, schöne Erinnerungen und neue Einblicke in eine andere Kultur.
       </p>
-<details class="hint-toggle"><summary>💡</summary><div class="hint-content">Cô thực sự rất quý mến em và sẽ luôn nhớ về khoảng thời gian chúng ta học cùng nhau.
-        Dù sau này em có tiếp tục học tiếng Đức hay không, cô vẫn mong rằng khóa học này đã mang đến cho em
-        không chỉ từ vựng và ngữ pháp, mà còn nhiều kiến thức bổ ích, kỷ niệm đẹp và hiểu biết về một nền văn hóa mới.</div></details>
+<details class="hint-toggle"><summary>💡</summary><span class="hint-content">Cô thật sự rất quý em và chắc chắn sẽ luôn nhớ về quãng thời gian cô trò mình đã học cùng nhau. Dù sau này em có tiếp tục đồng hành với tiếng Đức hay không, cô vẫn mong rằng sau khóa học này, điều em nhận được không chỉ là từ vựng và ngữ pháp, mà còn là những kiến thức mới, những kỷ niệm đẹp và những hiểu biết về một nền văn hóa khác.</span></details>
 </section>
 <section class="section">
 <p class="de">
@@ -210,31 +208,28 @@
         Und auf meinem eigenen Weg mit Deutsch durfte ich dich kennenlernen.
         Diese kleine Fügung gefällt mir ganz besonders.
       </p>
-<details class="hint-toggle"><summary>💡</summary><div class="hint-content">Tiếng Đức đã mở ra cho cô rất nhiều cơ hội trong cuộc sống.
-        Và trên chính hành trình đồng hành cùng tiếng Đức, cô đã có cơ hội được gặp em.
-        Cô rất thích sự sắp đặt đáng yêu này.</div></details>
+<details class="hint-toggle"><summary>💡</summary><span class="hint-content">Tiếng Đức đã mang đến cho cô rất nhiều cơ hội mới trong cuộc sống. Và cũng nhờ hành trình ấy, cô đã có cơ hội được gặp và biết đến em. Với cô, đó là một cái duyên rất đáng quý.</span></details>
 </section>
 <section class="section">
 <p class="de">
         Für deinen A1-Abschlusstest wünsche ich dir von Herzen ganz viel Erfolg.
-        Ich bin sicher, dass du es so gut wie möglich machen wirst. <strong>Du schaffst das bestimmt!</strong>
+        Ich bin sicher, dass du es so gut wie möglich machen wirst. Du schaffst das bestimmt!
 </p>
-<details class="hint-toggle"><summary>💡</summary><div class="hint-content">Cô chúc em thật nhiều thành công trong bài thi cuối khóa A1.
-        Cô tin rằng em sẽ làm tốt nhất có thể. Em nhất định sẽ làm được!</div></details>
+<details class="hint-toggle"><summary>💡</summary><span class="hint-content">Cô chúc em thật nhiều may mắn và làm bài thật tốt trong kỳ thi cuối khóa A1. Cô tin rằng em sẽ cố gắng hết sức và làm tốt nhất có thể. Em nhất định sẽ làm được!</span></details>
 </section>
 <section class="section">
 <p class="de">
         Und auch für deinen weiteren Weg wünsche ich dir ganz viel Glück und Erfolg.
       </p>
-<details class="hint-toggle"><summary>💡</summary><div class="hint-content">Và trên chặng đường sau này, cô chúc em luôn gặp thật nhiều may mắn và thành công.</div></details>
+<details class="hint-toggle"><summary>💡</summary><span class="hint-content">Trên chặng đường phía trước, cô cũng chúc em luôn gặp nhiều may mắn và gặt hái thật nhiều thành công.</span></details>
 </section>
 <section class="section">
 <p class="de">
         Ich werde dich sehr gern in Erinnerung behalten.
       </p>
-<details class="hint-toggle"><summary>💡</summary><div class="hint-content">Cô sẽ luôn nhớ đến em với rất nhiều tình cảm.</div></details>
+<details class="hint-toggle"><summary>💡</summary><span class="hint-content">Cô sẽ luôn nhớ đến em với những kỷ niệm thật đẹp.</span></details>
 <div class="closing">
-        Viele liebe Grüße und eine ganz feste Umarmung,<br/>
+        Viele liebe Grüße und eine ganz feste Umarmung<br/>
         Cô Thảo 🌷
       </div>
 </section>
@@ -242,31 +237,15 @@
 <h2>📚 Wortschatz</h2>
 <ul>
 <li><span class="deword">einen guten Eindruck hinterlassen</span> – để lại ấn tượng tốt</li>
-<li><span class="deword">lieb</span> – ngoan, đáng yêu, dễ mến</li>
-<li><span class="deword">höflich</span> – lễ phép</li>
-<li><span class="deword">fleißig</span> – chăm chỉ</li>
-<li><span class="deword">sich Mühe geben</span> – cố gắng, nỗ lực</li>
-<li><span class="deword">etwas wirklich verstehen</span> – thật sự hiểu điều gì đó</li>
-<li><span class="deword">etwas zuverlässig erledigen</span> – hoàn thành việc gì một cách nghiêm túc, đáng tin cậy</li>
-<li><span class="deword">aufmerksam mitmachen</span> – tham gia học tập một cách tập trung</li>
-<li><span class="deword">sich bemühen</span> – nỗ lực</li>
-<li><span class="deword">jemanden im echten Leben treffen</span> – gặp ai đó ngoài đời thật</li>
-<li><span class="deword">jemandem eine Umarmung geben</span> – ôm ai đó</li>
+<li><span class="deword">jemandem begegnen</span> – gặp ai đó</li>
+<li><span class="deword">die Umarmung</span> – cái ôm</li>
 <li><span class="deword">ein wichtiger Teil von etwas sein</span> – là một phần quan trọng của điều gì đó</li>
-<li><span class="deword">lebendig</span> – sôi động, sinh động</li>
-<li><span class="deword">etwas bereichern</span> – làm cho điều gì phong phú, ý nghĩa hơn</li>
-<li><span class="deword">jemanden ins Herz schließen</span> – trở nên rất quý mến ai đó</li>
+<li><span class="deword">jemanden ins Herz schließen</span> – rất quý mến ai đó</li>
 <li><span class="deword">sich an etwas erinnern</span> – nhớ về điều gì đó</li>
-<li><span class="deword">etwas mitnehmen</span> – tiếp thu, mang theo được điều gì sau một trải nghiệm</li>
-<li><span class="deword">einen Einblick in etwas bekommen</span> – có được cái nhìn/hiểu biết ban đầu về điều gì</li>
+<li><span class="deword">etwas mitnehmen</span> – tiếp thu, nhận được điều gì từ một trải nghiệm</li>
+<li><span class="deword">Einblicke in etwas</span> – những hiểu biết, góc nhìn về điều gì đó</li>
 <li><span class="deword">Möglichkeiten eröffnen</span> – mở ra những cơ hội</li>
-<li><span class="deword">jemanden kennenlernen</span> – làm quen, gặp gỡ ai đó</li>
-<li><span class="deword">die Fügung des Lebens</span> – sự sắp đặt của cuộc sống</li>
-<li><span class="deword">von Herzen</span> – từ tận đáy lòng, chân thành</li>
-<li><span class="deword">Du schaffst das bestimmt!</span> – Em nhất định sẽ làm được!</li>
-<li><span class="deword">der weitere Weg</span> – chặng đường phía trước</li>
-<li><span class="deword">neugierig</span> – ham học hỏi, tò mò theo nghĩa tích cực</li>
-<li><span class="deword">stolz auf etwas sein</span> – tự hào về điều gì đó</li>
+<li><span class="deword">die Fügung</span> – cái duyên, sự sắp đặt</li>
 <li><span class="deword">jemanden in Erinnerung behalten</span> – luôn nhớ đến ai đó</li>
 </ul>
 </section>
